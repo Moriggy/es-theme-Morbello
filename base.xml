@@ -1,0 +1,219 @@
+<!--
+FORK ALEKFULL-BELLO theme by Moriggy
+web.masos.ga
+v 1.0
+-->
+
+<theme>
+   <formatVersion>4</formatVersion>
+   
+	<feature supported="carousel">
+	
+	   <view name="system">
+	   
+			<carousel name="systemcarousel">
+			
+				<type>horizontal</type>
+				<pos>0 0.150</pos>
+				<size>1 1</size>
+				<logoScale>1</logoScale>
+				<logoSize>0.243 0.243</logoSize>
+				<color>ffffff00</color>
+				<maxLogoCount>3</maxLogoCount>
+				<zIndex>70</zIndex>
+        
+			</carousel>
+
+			<image name="background" extra="true">
+			
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<path>./_art/fondo.png</path>
+				<zIndex>60</zIndex>
+				
+			</image>
+			  
+			<text name="systemInfo">
+			
+				<pos>0.086 0.12</pos>
+				<backgroundColor>00000000</backgroundColor>
+				<color>ade7ef</color>
+				<alignment>left</alignment>
+				<fontPath>./_art/SF Slapstick Comic Bold.ttf</fontPath>
+				<fontSize>0.03</fontSize>
+				<zIndex>80</zIndex>
+			 
+			</text>
+
+		  
+			<helpsystem name="help">
+			
+				<textColor>777777</textColor>
+				<iconColor>77777750</iconColor>
+				<pos>0.04 0.936</pos>
+				<fontPath>./_art/SF Slapstick Comic Bold.ttf</fontPath>
+				<fontSize>0.023</fontSize>
+			  
+			</helpsystem>
+		
+		</view>
+		
+	</feature>
+
+	<view name="basic, detailed, video">
+	
+		<!-- Fondo gamelist -->
+		
+		<image name="background" extra="true">
+		
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./_art/gamelist.png</path>
+			<zIndex>70</zIndex>
+			
+		</image>
+	
+		<!-- Texto del sistema -->
+
+		<helpsystem name="help">
+		
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.020</fontSize>
+			
+		</helpsystem>
+	
+	</view>
+	
+	<view name="basic">
+		
+		<!-- Posicion de listado de juegos -->
+		
+		<textlist name="gamelist">
+		
+			<pos>0.084 0.12</pos>
+			<size>0.345 0.75</size>
+			<selectorColor>403c3e</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+			<lineSpacing>2.075</lineSpacing>
+			<zIndex>80</zIndex>
+			
+		</textlist>
+		
+		<!-- Posicion y tamaño imagen juego -->
+
+		<image name="md_image">
+		
+			<pos>0.730 0.385</pos>
+			<maxSize>0.40 0.65</maxSize>
+			<zIndex>80</zIndex>
+			
+		</image>
+		
+	</view>
+	
+	<view name="detailed">
+	
+		<!-- Posicion y tamaño imagen juego -->
+
+		<image name="md_image">
+		
+			<pos>0.730 0.385</pos>
+			<maxSize>0.40 0.65</maxSize>
+			<zIndex>80</zIndex>
+			
+		</image>
+		
+	</view>
+	
+	<feature supported="video">
+	
+		<view name="video">
+		
+			<!-- Posicion y tamaño del video juego -->
+
+			<video name="md_video">
+			
+				<pos>0.730 0.385</pos>
+				<maxSize>0.40 0.65</maxSize>        
+				<delay>0.8</delay>
+				<showSnapshotNoVideo>true</showSnapshotNoVideo>
+				<showSnapshotDelay>true</showSnapshotDelay>
+				
+			</video>
+			
+		</view>
+		
+	</feature>
+			
+	<view name="detailed,video">
+	
+		<!-- Posicion de listado de juegos -->
+		
+		<textlist name="gamelist">
+		
+			<pos>0.084 0.12</pos>
+			<size>0.345 0.75</size>
+			<selectorColor>403c3e</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.035</fontSize>
+			<alignment>left</alignment>
+			<lineSpacing>2.075</lineSpacing>
+			<zIndex>80</zIndex>
+			
+		</textlist>
+
+		<!-- Metadatos -->
+		
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_playcount, md_players">
+		
+			 <pos>2 2</pos>
+			 <size>0 0</size>
+			 <fontPath>./_art/Homizio.ttf</fontPath>
+			 <fontSize>0.1</fontSize>
+			 
+		</text>
+  
+		<datetime name="md_releasedate, md_lastplayed">
+		
+			<pos>2 2</pos>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.1</fontSize>
+			<size>0 0</size>
+			
+		</datetime>
+		
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite">
+			
+			<pos>2 2</pos>
+			<size>0 0</size>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.1</fontSize>
+			
+		</text>
+		  
+		<text name="md_description">
+			
+			<color>ffffff</color>      
+			<pos>0.535 0.725</pos>
+			<size>0.405 0.215</size>
+			<fontPath>./_art/Homizio.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<zIndex>80</zIndex>         
+		
+		</text>
+		
+	</view>
+   
+</theme>
